@@ -1,0 +1,22 @@
+function action(url) {
+	var xml_http_request = new XMLHttpRequest();
+	
+	xml_http_request.onreadystatechange = function(){
+		if (xml_http_request.readyState == 4 && xml_http_request.status == 200){
+			var send_response = JSON.parse(xml_http_request.responseText);
+			console.log(send_response['logged_in']);
+			if (send_response['logged_in'] == 1){
+				logged_in = 1
+			}
+		}
+	}
+	console.log("url: " + url);
+	xml_http_request.open("POST", url, true);
+	xml_http_request.send();
+}
+
+function checkLogin(){
+	url = "intern.php&user_name=test&password=test";
+	action(url);
+}
+

@@ -1,0 +1,94 @@
+
+<!doctype html>
+	<head>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type = "text/javascript" src = "script/script.js"></script>
+	<link rel="shortcut icon" type="image/png" href="./gklav.png"/>
+    <link href="style.css" rel="stylesheet">
+
+	<title>Folktetten</title>
+	
+	<script>
+		function hide(){
+			$('div.wrapp_info').hide();
+			$('div.wrapp_start').show();		
+			$('div.wrapp_contact').hide();		
+			$('div.wrapp_media').hide();		
+			$('div.wrapp_login').hide();
+		}
+	</script>
+	
+	</head>
+	<body>
+		<body onLoad="hide()">
+		<li class='start_page'><img src = 'logga.png' width = '25%' id ='start_page'></li>
+
+		<HR>			
+		<div class="nav">
+			<div class="container">
+				<ul class="pull-left">
+					<li class='info'><p id = "info", class = "tabs">Info</p></li>
+					<li class='contact'><p id ="contact", class = "tabs">Kontakt</p></li>
+					<li class='media'><p id="media", class = "tabs">Media</p></li>
+				</ul>
+				<!--<ul class="pull-right">
+					<li class='login'><p id = "login", class = "tabs">Logga in</p></li>
+				</ul>-->
+			</div>
+		</div>
+		
+		<div class="wrapp_start">
+			<div class ="front_page_pic"></div>
+			
+		</div>
+		
+		<div class="wrapp_info">
+			<br></br><br>
+			<p class="text">Folktetten består av ett härligt gäng musiker från Lund. 
+			Många va oss har spelat ihop i olika sammahang några år tillbaka, 
+			men våren 2015 bestämde vi oss för att bilda en egen grupp med namnet <i>Folktetten.</i>
+			
+			<br></br>
+			Vårt främsta syfte är att få spela tillsammans, underhålla publiken och ..?
+			</p>
+		</div>
+				
+		
+		<div class="wrapp_contact">
+			<br></br><br>
+			<p class="text">Folktetten gör sig lika bra som underhållningsmusik på konference som bakgrundsmusik till middagar och bröllop.  
+			Vår repetoar är bred och utökas hela tiden. <br>Om ni har några speciella önskemål utanför vår ordinarie repetoar så ska vi göra bästa för att lösa även det. Kort och gott, vi spelar det ni önskar.
+			<br></br>
+			För att boka oss kontaka Annica Eriksson på annica.er@folktetten.se eller på 070-270 60 65</p>
+		</div>
+		
+		
+		<div class="wrapp_media">
+			<br></br><br>
+			<p class="text">Snart kommer vi lägga upp filer från konserter under våren 2015.</p>
+		</div>
+		
+		<!--<div class="wrapp_login">
+			<p><br></br></p>
+			<div class ="login_insert">			
+				<!--<h1>PHP Login Session Example</h1>
+				<div id="login">
+					<h2>Logga in</h2>
+					<form action="" method="post">
+						<label>Användarnamn: </label>
+						<br><input id="name" name="username" placeholder="användarnamn" type="text">
+						<br><label>Lösenord: </label>
+						<br><input id="password" name="password" placeholder="*******" type="password">
+						<br><input name="submit" type="submit" value=" Logga in ">
+						<span><?php echo $error; ?></span>
+					</form>
+				</div>	
+			</div>
+		</div>
+		-->
+		<div class = "wrapp_info">
+		
+		</div>
+		
+	</body>
+</html>
